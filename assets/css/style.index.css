@@ -1,0 +1,105 @@
+/*Importando fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+/*Resetando css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Configs gerais*/
+body {
+    background-color: #181818;
+    align-items: center;
+}
+main {
+    background-color: #2a2a2a;
+    margin: 200px;
+    padding: 3rem;
+    border-radius: 8px;
+}
+
+/*Estilização área de coleta de dados*/
+#inputBoxArea {
+    display: flex;
+    justify-content: space-between;
+    background-color: #3e3e3e;
+    border-radius: 8px;
+
+}
+#toDoInput {
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    padding: 1.5rem;
+    font-size: 20px;
+    border-radius: 8px;
+    color: whitesmoke;
+}
+#toDoInput:focus {
+    outline: 0;
+}
+#addButton {
+    background-color: transparent;
+    border: none;
+    width: 10%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/*P invalid*/
+#invalid {
+    text-align: center;
+    color: rgb(210, 2, 2);
+    margin: 10px;
+}
+
+/*Estilização da área de tarefas*/
+.things{
+    background-color: #3e3e3e;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    color: #f0f0f0;
+    align-items: center;
+    font-size: 20px;
+}
+.things span {
+    margin: 10px;
+}
+
+/*Estilização dos botões das tarefas adicionadas*/
+button {
+    background-color: #8c8888;
+}
+#botoes{
+    display: flex;
+}
+.btn{
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100px;
+    margin: 10px;
+    transition: 0.5s;
+
+}
+.btn:hover{
+    cursor: pointer;
+}
+.taskDone {
+    background-color: #18ff00;
+}
+#delete:hover{
+    cursor: pointer;
+    background-color: rgb(214, 41, 41);
+}
+#edit:hover{
+    cursor: pointer;
+    background-color: rgb(32, 32, 236);
+    transition: 0.5s;
+}
